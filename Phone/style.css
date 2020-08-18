@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background: linear-gradient(135deg, rgb(74,13,143) 0%, rgba(250, 42, 143) 100%);
+    height: 100vh;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+ul li a{
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 0.2px;
+    transition: 0.2s ease;
+}
+
+ul li a:hover{
+    color: rgba(255,255,255,0.75);
+}
+
+ul li a.active{
+border-bottom: 2px solid #cd99d4;
+color: #fff;
+}
+
+ul li a.download{
+    border: 1px solid #fff;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+ul li a.download:hover{
+    background-color: #fff;
+    color: purple;
+    transition: 0.5s ease-in-out;
+}
+
+/* Logo CSS section */
+
+.logo img{
+    float: left;
+    position: absolute;
+    top: 27px;
+    height: 120px;
+    width: 120px;
+    margin-left: 30px;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.main {
+    max-width: 2400px;
+    margin: auto;
+}
+
+/* Title CSS section */
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.title p{
+    color: #ffb8f6;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Iphone Image CSS section */
+
+.image{
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    padding-bottom: 27%;
+    border-top-left-radius:  16%;
+    border-top-right-radius:  16%;
+    overflow: hidden;
+}
