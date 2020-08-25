@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Website Logo CSS */
+
+.logo {
+    border-radius: 50%;
+    opacity: 0.4;
+    height: 120px;
+    width: auto;
+    float: left;
+    margin: 20px;
+
+}
+
+/* MENU */
+
+.menu {
+    float: right;
+    margin-top: 60px;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.menu li a {
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #bf55ec;
+
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.main-content {
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+}
+
+.btn-full {
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-full:hover {
+    background-color: white;
+    transition: 0.3s ease-in;
+}
+
+
+.btn-nav {
+    background-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+
+.btn-nav:hover {
+    background-color: #bf55ec;
+    transition: 0.3s ease-in;
+
+}
+.colorchange{
+    animation: colorchangeroshan 4s infinite;
+}
+
+@keyframes colorchangeroshan{
+    0%{ color: red}
+    25%{color: #bf55ec}
+    50%{color: white}
+    100%{color: #bf55ec;}
+}
+
+.mobile-icon{display: none;}
+
+/* Responsive queries */
+
+@media only screen and (max-width:1180px){
+    .main-content{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width:998px){
+    .h1{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width:793px){
+    h1{
+        font-size: 180%;
+}
+}
+
+@media only screen and (max-width:793px){
+    .menu{
+        display: none;
+}
+.mobile-icon{
+    display: inline-block;
+}
+}
+
+
+
+
